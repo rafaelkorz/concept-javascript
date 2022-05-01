@@ -1,5 +1,4 @@
 import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import { GetServerSideProps } from "next"
 
 export default function Home() {
   const { user } = useUser();
@@ -10,6 +9,7 @@ export default function Home() {
       <pre>
         {JSON.stringify(user, null, 2)}
       </pre>
+      <a href="/api/auth/login">Login</a>
     </div>
   )  
 }

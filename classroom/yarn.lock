@@ -60,6 +60,22 @@
     ora "5.4.1"
     rxjs "6.6.7"
 
+"@apollo/core-schema@~0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@apollo/core-schema/-/core-schema-0.3.0.tgz#c6c1a6821fb326501d73eb85d920bbf57906cc77"
+  integrity sha512-v+Ys6+W1pDQu+XwP++tI5y4oZdzKrEuVXwsEenOmg2FO/3/G08C+qMhQ9YQ9Ug34rvQGQtgbIDssHEVk4YZS7g==
+  dependencies:
+    "@protoplasm/recall" "^0.2"
+
+"@apollo/federation-internals@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@apollo/federation-internals/-/federation-internals-2.0.2.tgz#f10e7d8c9a54846a5056055ec345813ca9e05fc3"
+  integrity sha512-yLooPy6q0FX351fDdBqNEm6hWz1tiV/oVOi2j8NYDL1sjPKR2cFedUjvQuAFmH8WfNXPOTIjMPJpO3XNMc4qCA==
+  dependencies:
+    "@apollo/core-schema" "~0.3.0"
+    chalk "^4.1.0"
+    js-levenshtein "^1.1.6"
+
 "@apollo/protobufjs@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@apollo/protobufjs/-/protobufjs-1.2.2.tgz#4bd92cd7701ccaef6d517cdb75af2755f049f87c"
@@ -78,6 +94,13 @@
     "@types/long" "^4.0.0"
     "@types/node" "^10.1.0"
     long "^4.0.0"
+
+"@apollo/subgraph@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@apollo/subgraph/-/subgraph-2.0.2.tgz#b48cb89191ea112f18c591163a66c2f0bd3efde4"
+  integrity sha512-44W6nWN4XTEkRYqDOSqJIH63ZIWRjxfoIeP592R9aCY8rBXKjmSWNKDsGO+fsi8/fhI9plvADDkNqNprJCJLOw==
+  dependencies:
+    "@apollo/federation-internals" "^2.0.2"
 
 "@apollographql/apollo-tools@^0.5.3":
   version "0.5.3"
@@ -450,6 +473,11 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
+
+"@protoplasm/recall@^0.2":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@protoplasm/recall/-/recall-0.2.4.tgz#d7b1a5f1e94481d015e9666bd791e57d51b8cc67"
+  integrity sha512-+w5WCHQwuZ0RZ3+ayJ42ArGPIeew2Wxb+g1rPNA+qiehCc4EDTDjW7DyPPq9FBa4lFUDC4mgDytV8Fkxe/Z3iQ==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
@@ -2316,6 +2344,11 @@ jose@^2.0.5:
   dependencies:
     "@panva/asn1.js" "^1.0.0"
 
+js-levenshtein@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
+  integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -3250,6 +3283,11 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+
+slugify@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.5.tgz#c8f5c072bf2135b80703589b39a3d41451fbe8c8"
+  integrity sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==
 
 source-map-support@0.5.21, source-map-support@^0.5.20, source-map-support@~0.5.20:
   version "0.5.21"

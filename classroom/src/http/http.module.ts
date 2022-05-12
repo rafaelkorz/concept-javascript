@@ -9,6 +9,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import path from 'node:path';
 
 import { DatabaseModule } from '../database/database.module';
+import { MessagingModule } from '../messaging/messaging.module';
 import { CoursesService } from '../services/course.service';
 import { EnrollmentsService } from '../services/enrollment.service';
 
@@ -22,6 +23,7 @@ import { StudentsResolver } from './graphql/resolvers/students.resolver';
   imports: [
     ConfigModule.forRoot(),
     DatabaseModule,
+    MessagingModule,
     GraphQLModule.forRoot<ApolloFederationDriverConfig>({
       driver: ApolloFederationDriver,
       autoSchemaFile: path.resolve(process.cwd(), 'src/schema.gql'),

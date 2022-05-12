@@ -14,10 +14,12 @@ import { PurchasesResolver } from './graphql/resolvers/purchases.resolver';
 import { PurchasesService } from 'src/services/purchases.service';
 import { CustomersResolver } from './graphql/resolvers/customers.resolver';
 import { CustomersService } from 'src/services/custumer.service';
+import { MessagingModule } from 'src/messaging/messaging.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    MessagingModule,
     DatabaseModule,
     GraphQLModule.forRoot({
       driver: ApolloDriver,

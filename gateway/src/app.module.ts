@@ -21,17 +21,17 @@ import { GraphQLModule } from '@nestjs/graphql';
             { name: 'classroom', url: 'http://localhost:3334/graphql' },
           ],
         }),
-        buildService: ({ url }) => {
-          return new RemoteGraphQLDataSource({
-            url,
-            willSendRequest({ request, context }) {
-              request.http.headers.set(
-                'authorization',
-                context?.['headers']?.['authorization'],
-              );
-            },
-          });
-        },
+        // buildService: ({ url }) => {
+        //   return new RemoteGraphQLDataSource({
+        //     url,
+        //     willSendRequest({ request, context }) {
+        //       request.http.headers.set(
+        //         'authorization',
+        //         context?.['headers']?.['authorization'],
+        //       );
+        //     },
+        //   });
+        // },
       },
     }),
   ],

@@ -10,6 +10,7 @@ export const config = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { accessToken } = await getAccessToken(req, res);
+  console.log(accessToken);
 
   return httpProxyMiddleware(req, res, {
     target: 'http://localhost:3339/graphql',
